@@ -1,0 +1,33 @@
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/build*
+/public/version.json
+
+# TypeScript
+*.js
+*.js.map
+
+# Vim
+*~
+
+# misc
+.DS_Store
+.vscode
+
+npm-debug.log*
+package-lock.json
+
+.idea
+.vscode/.history
+
+# Crash log files
+crash.log
+
+# other
+build/
+dist/

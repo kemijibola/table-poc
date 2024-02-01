@@ -6,20 +6,22 @@
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "test": "jest --config jestconfig.json --colors --passWithNoTests"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/optty/bnpl-pocs/reporting-poc.git"
+    "url": "https://github.com/kemijibola/table-poc.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/optty/bnpl-pocs/reporting-poc/issues"
+    "url": "https://github.com/kemijibola/table-poc.git/issues"
   },
-  "homepage": "https://gitlab.com/optty/bnpl-pocs/reporting-poc#readme",
+  "homepage": "https://github.com/kemijibola/table-poc.git#readme",
   "devDependencies": {
     "@testing-library/jest-dom": "^6.4.0",
     "@testing-library/react": "^14.2.0",
@@ -34,6 +36,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.6",
     "@mui/material": "^5.15.6",
