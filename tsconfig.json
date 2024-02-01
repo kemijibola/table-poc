@@ -8,6 +8,7 @@
       "module": "esnext",
       "lib": ["dom", "esnext"],
       "importHelpers": true,
+      "target": "ES2021",
       "declaration": true,
       "sourceMap": true,
       "rootDir": "./src",
